@@ -1,0 +1,22 @@
+bin/
+obj/
+
+# Frontend build output
+dist/
+build/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+appsettings.Local.json
+
+# Logs
+*.log
+logs/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
