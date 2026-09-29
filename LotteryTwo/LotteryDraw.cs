@@ -1,3 +1,4 @@
+namespace LotteryTwo;
 
 public class LotteryDraw
 {
