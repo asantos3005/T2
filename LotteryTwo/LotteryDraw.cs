@@ -1,28 +1,27 @@
 
 public class LotteryDraw
 {
-    private readonly List<int> _numbers;
+    public List<int> MainNumbers { get; set; }
+    public List<int> BonusNumbers { get; set; }
 
-    public IReadOnlyList<int> Numbers => _numbers;
 
-    public LotteryDraw(List<int> initNumbers)
+
+    public LotteryDraw(List<int> initMainNumbers, List<int> initBonusNumbers)
     {
-
-        if (initNumbers.Count != 6)
+        if (initMainNumbers.Count != 6)
         {
             throw new ArgumentException(
-                "Lottery draw must have 6 numbers"
+                "Lottery draw must have 6 main numbers"
                 );
         }
 
-        if (initNumbers.Count != 6)
+        if (initBonusNumbers.Count != 2)
         {
             throw new ArgumentException(
-                "Lottery draw must have 6 numbers"
+                "Lottery draw must have 2 bonus numbers"
                 );
         }
-        _numbers = initNumbers;
+        MainNumbers = initMainNumbers;
+        BonusNumbers = initBonusNumbers;
     }
-
-
 }
