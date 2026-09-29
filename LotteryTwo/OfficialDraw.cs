@@ -1,13 +1,13 @@
 namespace LotteryTwo;
 
-public class LotteryDraw
+public class OfficialDraw
 {
     public List<int> MainNumbers { get; set; }
     public List<int> BonusNumbers { get; set; }
 
 
 
-    public LotteryDraw(List<int> initMainNumbers, List<int> initBonusNumbers)
+    public OfficialDraw(List<int> initMainNumbers, List<int> initBonusNumbers)
     {
         if (initMainNumbers.Count != 6)
         {
